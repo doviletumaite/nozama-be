@@ -12,6 +12,10 @@ app.use(express.json());
 
 app.use("/", productsRouter);
 
+app.get("/", (req, res) => {
+  res.send("API running");
+});
+
 connectDB()
   .then(() => {
     app.listen(PORT, () => {
