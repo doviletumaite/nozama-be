@@ -13,7 +13,7 @@ app.use(express.json());
 app.use("/", productsRouter);
 
 app.get("/", (req, res) => {
-  res.send("API running");
+  res.send("API running!");
 });
 
 connectDB()
